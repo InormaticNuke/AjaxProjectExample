@@ -261,7 +261,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Pelicula\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -269,7 +268,7 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Index.cshtml" />
+    <Content Include="Views\Pelicula\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

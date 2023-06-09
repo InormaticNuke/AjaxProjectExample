@@ -5,7 +5,7 @@
 <h2>Index</h2>
 
 <div id="peliculasContainer"></div>
-<script src="https://code.jquery.com/jquery-3.6.8.min.js"></script></script></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 <script>
 
@@ -24,7 +24,7 @@
             },
 
             error: function () {
-                alert("Error, No Movies at the URL")
+                alert("Error, No Movies at the URL");
             }
 
         });
@@ -43,7 +43,7 @@
             output += "<div />";
         }
 
-        $("peliculasContainer").html(output);
+        $("#peliculasContainer").html(output);
     }
 
 </script>
