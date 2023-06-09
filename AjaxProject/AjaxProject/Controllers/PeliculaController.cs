@@ -21,33 +21,39 @@ namespace AjaxProject.Controllers
         public PeliculaController()
         {
 
-            peliculas = new Pelicula[]
+            peliculas = new Boleta[]
             {
-                new Pelicula
+                new Boleta
                 {
                     IdPelicula = "100",
                     NombrePelicula = "John Wick",
                     CategoriaPelicula = "Accion",
+                    claseEntradas = new Entradas{
                     CantidadEntradas = 1,
                     ValorEntradas = 4500
+                    }
                 },
 
-                new Pelicula
+                new Boleta
                 {
                     IdPelicula = "200",
                     NombrePelicula = "El señor de los anillos",
                     CategoriaPelicula = "Ficcion",
+                    claseEntradas = new Entradas{
                     CantidadEntradas = 4,
                     ValorEntradas = 5000
+                    }
                 },
 
-                new Pelicula
+                new Boleta
                 {
                     IdPelicula = "300",
                     NombrePelicula = "Alien",
                     CategoriaPelicula = "Ciencia Ficcion",
+                    claseEntradas = new Entradas{
                     CantidadEntradas = 2,
                     ValorEntradas = 3500
+                    }
                 }
 
             };
