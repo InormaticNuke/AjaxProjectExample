@@ -1,4 +1,5 @@
 ﻿using AjaxProject.Models;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -52,5 +53,11 @@ namespace AjaxProject.Controllers
             };
 
         }
+
+        public string ObtenerPeliculasJson()
+        {
+            return JsonConvert.SerializeObject(peliculas);
+        }
+
     }
 }
