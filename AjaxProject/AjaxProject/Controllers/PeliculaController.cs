@@ -34,19 +34,19 @@ namespace AjaxProject.Controllers
                 new Pelicula
                 {
                     IdPelicula = "200",
-                    NombrePelicula = "",
-                    CategoriaPelicula = "Accion",
-                    CantidadEntradas = 1,
-                    ValorEntradas = 4500
+                    NombrePelicula = "El señor de los anillos",
+                    CategoriaPelicula = "Ficcion",
+                    CantidadEntradas = 4,
+                    ValorEntradas = 5000
                 },
 
                 new Pelicula
                 {
                     IdPelicula = "300",
-                    NombrePelicula = "John Wick",
-                    CategoriaPelicula = "Accion",
-                    CantidadEntradas = 1,
-                    ValorEntradas = 4500
+                    NombrePelicula = "Alien",
+                    CategoriaPelicula = "Ciencia Ficcion",
+                    CantidadEntradas = 2,
+                    ValorEntradas = 3500
                 }
 
             };
