@@ -5,6 +5,7 @@
 <h2>Index</h2>
 
 <div id="peliculasContainer"></div>
+<script> src="https://code.jquery.com/jquery-3.6.8.min.js"</script>
 
 <script>
 
@@ -27,6 +28,22 @@
             }
 
         });
+    }
+
+    function mostrarPeliculas(peliculas) {
+        var output = "";
+
+        for (var i = 0; i < peliculas.length; i++) {
+            output += "<div>";
+            output += "<strong> Id: </strong>" + peliculas[i].IdPelicula + "<br />";
+            output += "<strong> Nombre: </strong>" + peliculas[i].NombrePelicula + "<br />";
+            output += "<strong> Categoria: </strong>" + peliculas[i].CategoriaPelicula + "<br />";
+            output += "<strong> Cantidad de entradas: </strong>" + peliculas[i].CantidadEntradas + "<br />";
+            output += "<strong> Valor de entradas: </strong>" + peliculas[i].ValorEntradas + "<br />";
+            output += "<div />";
+        }
+
+        $("peliculasContainer").html(output);
     }
 
 </script>
