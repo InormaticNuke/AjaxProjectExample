@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div id="peliculasContainer"></div>
+
+<script>
+
+    $(document).ready(function () {
+        obtenerPeliculas();
+
+    });
+
+    function obtenerPeliculas() {
+        $.ajax({
+            type: "GET",
+            url: "@Url.Action("ObtenerPeliculasJson", "Pelicula")",
+            dataType: "json",
+            success: function (peliculas) {
+                mostrarPeliculas(peliculas);
+            },
+
+            error: function () {
+                alert("Error, No Movies at the URL")
+            }
+
+        });
+    }
+
+</script>
+
